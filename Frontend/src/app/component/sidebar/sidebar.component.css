@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+#sb .element{
+    color:rgb(255, 229, 180);
+}
+#sb {
+    /* position: fixed; */
+    width: 150px;
+    height: 296px;
+    margin: 0px -25px;
+    background-color: #474e5d;
+
+}
+#sb ul li {
+color:white;
+list-style: none ;
+padding: 15px 10px;
+border-bottom: 1px solid wheat;
+background: #474e5d;
+} 
+#sb .toggle-btn {
+   /* position: absolute; */
+   left: 200px;
+   top: 20px;
+    /* left: -200px; */
+}
+#sb.active{
+    left: 0px;
+}
+#sb.toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px 0px;
+}

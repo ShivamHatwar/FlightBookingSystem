@@ -1,0 +1,109 @@
+<div class="container-fluid">
+
+    <div class="page-wrapper">
+        <div class="row">
+            <div style="padding: 10px" class="col-lg-12 col-md-12 bg-info text-light">
+                <marquee direction="left">
+                    <h2 class="text-center" style="margin:20px">
+                        {{ title }}
+
+                    </h2>
+                </marquee>
+            </div>
+        </div>
+        <!-- end of header -->
+        <div class="row" class="col-lg-12 col-md-12">
+            <!-- <div class="offset-lg-1 offset-md-1 col-lg-8 col-md-8"> -->
+            <div>
+                <!-- DYNAMIC RENDERING OF COMPONENTS -->
+                <!-- It will act like a placeholder, where components will be replaced
+          based on routes or navigation clicks -->
+                <router-outlet></router-outlet>
+
+                <!-- STATIC RENDERING -->
+                <!-- <app-home></app-home>
+          <app-home></app-home>
+          <app-home></app-home> -->
+            </div>
+            <!-- <div class="col-lg-2 col-md-2 col-sm-12">
+          <div style="margin-top:10%">
+              <img src="assets/images/source.gif" style="width:100%" />
+          </div>
+      </div>
+  </div> -->
+            <!-- end of row -->
+            <br />
+            <!-- 
+  <footer>
+      <div class="row">
+              <div class="offset-lg-1 offset-md-1 col-lg-7 col-md-7">
+                  <span class="text-danger">
+                      <strong>This site is copyright &copy;  
+                          {{ todaysDate | date:'yyyy'}}.
+                          All rights are reserved here.
+                      </strong>
+                  </span>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                  <div class="text-center text-primary">
+                      
+                      <h4> {{todaysDate| date:'medium'}}</h4>
+                  </div>
+              </div>
+                    </div>
+     
+                    </footer>
+        -->
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text"><span>XYZ</span>Airline</h1>
+                <p>
+                    XYZ airline is a company that provides air transport <br />
+                    services for traveling passengers and freight.
+                </p>
+                <div class="contaxt">
+                    <div class="row">
+                        <span><i class="fa fa-phone fa"></i>&nbsp;123-456-7890</span>
+                    </div>
+                    <div class="row">
+
+                        <span><i class="fa fa-laptop"></i>&nbsp;info@xyzairline.com</span>
+                    </div>
+                    <div class="socials">
+                        <div class="row">
+                            <span> <i class="fa fa-facebook-official"
+                                    style="font-size:36px"></i>&nbsp;/xyzairline</span>
+                        </div>
+                        <div class="row">
+                            <span> <i class="fa fa-instagram" style="font-size:36px"></i>&nbsp; @xyzairline</span>
+                        </div>
+                        <div class="row">
+                            <span> <i class="fa fa-youtube-play" style="font-size:36px"></i>&nbsp;/xyzairline</span>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="footer-bottom">
+
+
+                This site is copyright &copy;
+                {{ todaysDate | date:'yyyy'}}.
+                All rights are reserved here.
+
+                {{todaysDate| date:'medium'}}
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- <h2>Developed By : {{ fullName }} </h2> -->

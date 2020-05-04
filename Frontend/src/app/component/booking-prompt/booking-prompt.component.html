@@ -1,0 +1,47 @@
+<br />
+<br />
+<div class="row">
+    <div class="col">
+        
+            <div class="row">
+                <div class="card bg-light col-lg-6">
+
+                    <div class="col-12 text-dark" style="text-align: left">
+                        <strong>Note Following Details</strong>
+                        <hr />
+                        Airline : XYZ Airlines<br />
+                        FairType : Refundable<br />
+                        Cancelation : 50 Rs<br />
+                        SEATS & BAGGAGE:EXTRA CHARGE<br />
+                        INFLIGHT FEATURES:AVAILABLE<br />
+                        TAXES & FEES:18% GST(included)<br />
+
+                        <br><br>
+                    </div>
+
+                </div>
+                <div class="card bg-dark col-lg-5" >
+                    <br>
+                    <div class="col-12 text-light ">
+                        <div class="row" style="text-align: center;">
+                            <div class="col-12">
+                                <h3><strong>{{flight.source}} TO {{flight.destin}}</strong></h3>
+                            </div><br /><br /><br />
+                            <div class="col-12">
+                                <h3><strong>Seats Available: {{flight.avaliableseats}}</strong></h3><br>
+                                <h3><strong>Total Cost : {{flight.price}}</strong></h3>
+                            </div><br /><br /><br />
+                            <div class="col-12">
+                                <br>
+                                <button class="btn btn-primary" (click)="payment()" style="margin-bottom: 20px;">Make Payment</button>
+                                <br>
+                                <button class="btn btn-primary" (click)="cancel()" style="margin-bottom: 20px;">Cancel</button>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</div>
